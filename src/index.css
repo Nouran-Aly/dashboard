@@ -1,0 +1,483 @@
+:root {
+  --main-color: #F59022;
+  --secondary-color: #44c9e1;
+
+  --blue-color: #3A6FF8;
+  --subtle-blue: #EEEFFF;
+  --orange-color: #FFBE17;
+  --subtle-orange: #FFF8E5;
+  --green-color: #14CC26;
+  --subtle-green: #EBFFE8;
+  --red-color: #FF613E;
+  --subtle-red: #FFE6E1;
+  --mint-color: #209F84;
+  --subtle-mint: #E9F5F3;
+  --light-blue-color: #44C9E1;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.white-background {
+  background-color: #ffffff;
+}
+
+.light-blue-background {
+  background-color: #e9f2f5;
+}
+
+/* sidebar */
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link.active .nav-content {
+  background-color: #e8f1f4;
+  color: black;
+  border-radius: 8px;
+}
+
+.nav-link.active .nav-content .fa {
+  color: var(--main-color);
+}
+
+.acc-height {
+  height: 45px;
+}
+
+/* navbar */
+.page-body {
+  background-color: #e8f1f4;
+  /* height: 100%; */
+}
+
+.navbar-content .icon {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* dashboard page */
+.dashboard .card .card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.dashboard .card .card-icon.income {
+  background-color: var(--subtle-blue);
+  color: var(--blue-color);
+}
+
+.dashboard .card .card-icon.orders {
+  background-color: var(--subtle-orange);
+  color: var(--orange-color);
+}
+
+.dashboard .card .card-icon.followers {
+  background-color: var(--subtle-green);
+  color: var(--green-color);
+}
+
+.dashboard .card .card-icon.stores {
+  background-color: var(--subtle-red);
+  color: var(--red-color);
+}
+
+.dashboard .card .card-title {
+  color: #676767;
+  font-weight: 400;
+  line-height: 18.23px;
+  font-size: 14px;
+}
+
+.dashboard .card .card-percentage-up {
+  color: #14CC26;
+}
+
+.dashboard .card .card-percentage-down {
+  color: #FF613E;
+}
+
+.dashboard .card .card-percentage {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dashboard .locations {
+  background-color: #FBFBFB;
+  border-radius: 4px;
+}
+
+.dashboard .locations li {
+  position: relative;
+}
+
+.dashboard .locations li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  left: -15px;
+  z-index: 100;
+}
+
+.dashboard .locations li .before {
+  /* content: ""; */
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: var(--orange-color);
+  border-radius: 2px;
+  left: -15px;
+  z-index: 100;
+}
+
+.dashboard .ordered-product-card {
+  box-shadow:
+    0px 2px 8px 0px #AEAEAE40,
+    4px 4px 0px 0px #F5902280;
+}
+
+.dashboard .order-details .sold-items {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* stores page */
+.store-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--subtle-orange);
+  color: var(--orange-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.store-icon:hover {
+  background-color: var(--main-color);
+  color: var(--subtle-orange);
+}
+
+
+.table td,
+th {
+  vertical-align: middle;
+}
+
+.table tr,
+td,
+th {
+  border: 0;
+}
+
+.table>:not(caption)>*>* {
+  padding: 15px 0;
+}
+
+/* store-requests page */
+.store-requests .buttons button {
+  width: 130px;
+  height: 48px;
+  border-radius: 20px;
+}
+
+/* Stores data */
+.stores-data .order-state-recieved {
+  background-color: var(--green-color);
+}
+
+.stores-data .order-state-shipped {
+  background-color: var(--main-color);
+}
+
+.stores-data .order-state-delivered {
+  background-color: var(--light-blue-color);
+}
+
+/* store details */
+.store-details .buttons button {
+  transition: all 0.3s;
+}
+
+.store-details .buttons .subscription-btn {
+  color: var(--mint-color);
+  background-color: var(--subtle-mint);
+}
+
+.store-details .buttons .subscription-btn:hover {
+  background-color: var(--mint-color);
+  color: var(--subtle-mint);
+}
+
+.history-btn {
+  color: var(--main-color);
+  background-color: var(--subtle-orange);
+}
+
+.history-btn:hover {
+  background-color: var(--main-color);
+  color: var(--subtle-orange);
+}
+
+/* order details */
+.price {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.size-box {
+  background-color: var(--subtle-orange);
+  color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-color {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--mint-color);
+}
+
+.card-title img {
+  /* width: 112px;
+  height: 112px; */
+  height: 200px;
+}
+
+/* custom header */
+.custom-header {
+  background-color: var(--subtle-orange);
+  border-radius: 34px;
+  color: var(--orange-color);
+  height: 50px;
+}
+
+.custom-header .custom-nav-link {
+  padding: 10px 0;
+  color: var(--orange-color);
+  border-radius: 34px;
+  transition: all 0.3s;
+}
+
+.custom-header .custom-nav-link:hover {
+  background-color: #f58f2289;
+  color: white;
+}
+
+.custom-header a.active {
+  background-color: var(--main-color);
+  /* padding: 10px 15px; */
+  color: white;
+}
+
+/* categories */
+.categories .image-frame {
+  width: 40px;
+  height: 40px;
+  background-color: #E9F2F5;
+  border-radius: 50%;
+  display: block;
+}
+
+/* plans */
+/* subscription */
+.subscription-page {
+  background-color: var(--dark-blue-color);
+  padding: 30px;
+}
+
+.subscription .silver-card {
+  /* background-color: #dff4ff;
+  background-image: url(../src/assets/silver/Vector\ 110.png), url(../src/assets/silver/Vector\ 111.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: contain; */
+  /* position: relative; */
+  background-color: #9DB6C3;
+}
+
+.subscription .silver-card .header-img::before {
+  /* content: "";
+  background-color: #9db6c3;
+  width: 60px;
+  height: 70px;
+  position: absolute; */
+}
+
+.subscription .silver-card .subscription-btn {
+  /* background-color: white; */
+}
+
+.subscription .gold-card {
+  background-color: #fff7ab;
+  background-image: url(../src/assets/gold/Vector\ 110.png), url(../src/assets/gold/Vector\ 111.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: contain;
+  /* position: relative; */
+}
+
+.subscription .gold-card .header-img::before {
+  content: "";
+  background-color: #ffde6a;
+  width: 60px;
+  height: 70px;
+  position: absolute;
+}
+
+.subscription .platinum-card {
+  background-color: #dec7f1;
+  background-image: url(../src/assets/platinum/Vector\ 110.png), url(../src/assets/platinum/Vector\ 111.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: contain;
+  /* position: relative; */
+}
+
+.subscription .platinum-card .header-img::before {
+  content: "";
+  background-color: #9664c0;
+  width: 60px;
+  height: 70px;
+  position: absolute;
+}
+
+.dark-background {
+  background-color: var(--dark-blue-color);
+  padding: 30px 0;
+}
+
+/* .silver-card {
+  background-image: url(../src/assets/silver/Frame\ 162419\ 1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.gold-card {
+  background-image: url(../src/assets/silver/Frame\ 162419\ 1.png);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.platinum-card {
+  background-image: url(../src/assets/silver/Frame\ 162419\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* login */
+.login {
+  background-color: #e9f2f5;
+  width: 100%;
+  height: 100vh;
+}
+
+form .input-box {
+  position: relative;
+}
+
+form .input-box input {
+  border-radius: 12px;
+  border: 1px solid #BFC8CA;
+  padding: 20px 0;
+  padding-left: 60px;
+}
+
+form .input-box input::placeholder {
+  color: var(--light-grey-color);
+}
+
+form .input-box .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+form .input-box i {
+  background-image: linear-gradient(to left,
+      var(--main-color),
+      var(--secondary-color));
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+}
+
+.input-box .error-icon {
+  color: red;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login button {
+  background-image: linear-gradient(to right, var(--main-color), var(--secondary-color));
+  outline: none;
+  border: none;
+}
+
+.right-side {
+  background-image: linear-gradient(to left, var(--main-color), var(--secondary-color));
+}
+
+.logo-img {
+  width: 98.53px;
+}
+
+.login-img {
+  width: 200px;
+}
+
+.dark-logo {
+  width: 50%;
+}
+
+.security-logo {
+  width: 50%;
+}
+
+.login .rounded-container {
+  border-radius: 16px;
+}
+
+.showPassword {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  font-size: 25px;
+  cursor: pointer;
+  /* background-image: none; */
+}
+
+.login-logo img {
+  width: 150px;
+}
