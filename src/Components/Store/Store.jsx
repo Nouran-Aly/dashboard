@@ -13,7 +13,7 @@ export default function Store() {
 
   async function getAllStores(page = 1, pageSize = 8) {
     return axios
-      .get("http://nilelon.somee.com/api/AdminDataManagement/GetAllStores", {
+      .get("https://nilelon.somee.com/api/AdminDataManagement/GetAllStores", {
         params: {
           status: "",
           page: page,
