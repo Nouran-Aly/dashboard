@@ -34,7 +34,7 @@ export default function Dashboard() {
   async function getAdminDashboardStatistics() {
     return await axios
       .get(
-        "http://nilelon.somee.com/api/AdminDashboard/GetAdminDashboardStatistics"
+        "https://nilelon.somee.com/api/AdminDashboard/GetAdminDashboardStatistics"
       )
       .then((res) => {
         setDashboardStatistics(res.data.result);
@@ -47,7 +47,7 @@ export default function Dashboard() {
   // handle Orders Locations
   async function getMostOrdersLocation() {
     return await axios
-      .get("http://nilelon.somee.com/api/AdminDashboard/GetMostOrdersLocation")
+      .get("https://nilelon.somee.com/api/AdminDashboard/GetMostOrdersLocation")
       .then((res) => {
         setOrdersLocations(res.data.result);
       })
@@ -59,7 +59,7 @@ export default function Dashboard() {
   // handle Top ordered products
   async function getTopOrderedProducts() {
     return await axios
-      .get("http://nilelon.somee.com/api/AdminDashboard/GetTopOrderedProducts")
+      .get("https://nilelon.somee.com/api/AdminDashboard/GetTopOrderedProducts")
       .then((res) => {
         console.log("toppp", res.data.result);
 
